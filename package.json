@@ -1,0 +1,11 @@
+{
+  "name": "vue-mobile",
+  "version": "0.0.1",
+  "description": "Every Mobile UI component you need!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Irteza Asad",
+  "license": "ISC"
+}
