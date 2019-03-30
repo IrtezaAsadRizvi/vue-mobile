@@ -1,11 +1,22 @@
 {
+  "private": false,
   "name": "vue-mobile",
   "version": "0.0.1",
   "description": "Every Mobile UI component you need!",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vue serve NiceHandsomeButton.vue",
+    "build": "bili --name index --plugin vue --vue.css false"
   },
+  "files": [
+    "dist/*"
+  ],
   "author": "Irteza Asad",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "bili": "^4.7.2",
+    "rollup-plugin-vue": "^4.7.2",
+    "vue-template-compiler": "^2.6.10"
+  }
 }
