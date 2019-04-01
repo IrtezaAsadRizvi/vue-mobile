@@ -3,6 +3,7 @@
          :class="{
               'task-bar--box-shadowed': enableBoxShadow,
               'task-bar--bordered': enableBorder,
+              'task-bar--fixed-on-top': enableFixedOnTop,
          }"
          :style="{color: color, backgroundColor: backgroundColor}">
 
@@ -10,9 +11,9 @@
             <!--back button-->
             <button class="btn--transparent"
                     @click="backButtonPressed()"
-                    style="padding-left: 0">
+                    style="padding-left: 0; margin-right: 10px">
                 <i class="material-icons icon--in-text"
-                   style="font-size: var(--font_size_regular)"
+                   style="font-size: var(--font_size_semi_large)"
                 >arrow_back</i>
             </button>
 
@@ -49,10 +50,14 @@
                 type: Boolean,
                 default: true,
             },
+            enableFixedOnTop: {
+                type: Boolean,
+                default: true,
+            },
             viewName: {
                 type: String,
                 default: ''
-            }
+            },
         },
         methods: {
             backButtonPressed() {
@@ -68,11 +73,18 @@
         display: flex;
         justify-content: space-between;
         padding: var(--padding_side);
+        position: relative;
     }
     .task-bar--box-shadowed {
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
     }
     .task-bar--bordered {
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .task-bar--fixed-on-top {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 </style>
