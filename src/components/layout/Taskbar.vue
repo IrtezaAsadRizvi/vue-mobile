@@ -1,5 +1,10 @@
 <template>
-    <div id="task-bar" :style="{color: color, backgroundColor: backgroundColor}">
+    <div id="task-bar"
+         :class="{
+              'task-bar--box-shadowed': enableBoxShadow,
+              'task-bar--bordered': enableBorder,
+         }"
+         :style="{color: color, backgroundColor: backgroundColor}">
         <div>
             <!--back button-->
             <button class="btn--transparent"
@@ -32,7 +37,15 @@
             },
             backgroundColor: {
                 type: String,
-                default: "#FFF4F4",
+                default: "#FFFFFF",
+            },
+            enableBoxShadow: {
+                type: Boolean,
+                default: false,
+            },
+            enableBorder: {
+                type: Boolean,
+                default: true,
             },
             viewName: {
                 type: String,
@@ -53,5 +66,11 @@
         display: flex;
         justify-content: space-between;
         padding: var(--padding_side);
+    }
+    .task-bar--box-shadowed {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    }
+    .task-bar--bordered {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
 </style>

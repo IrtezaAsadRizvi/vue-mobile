@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f3877d-9115-4a11-acc2-aee0db120dbf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/assets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Taskbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Taskbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,7 +47,7 @@
           <entry key="css" value="411" />
           <entry key="gitignore" value="1" />
           <entry key="json" value="19" />
-          <entry key="vue" value="850" />
+          <entry key="vue" value="929" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -57,7 +55,7 @@
           <entry key="CSS" value="411" />
           <entry key="JSON" value="19" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Vue.js" value="850" />
+          <entry key="Vue.js" value="929" />
         </counts>
       </usages-collector>
     </session>
@@ -94,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NiceHandsomeButton.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="198">
+              <caret line="11" column="14" selection-start-line="4" selection-start-column="12" selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -109,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
@@ -118,12 +116,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/layout/Taskbar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="822">
+              <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
               <folding>
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -166,8 +165,8 @@
         <option value="$PROJECT_DIR$/src/components.vue" />
         <option value="$PROJECT_DIR$/src/components/layout/taskbar.vue" />
         <option value="$PROJECT_DIR$/src/assets/global.css" />
-        <option value="$PROJECT_DIR$/src/components/layout/Taskbar.vue" />
         <option value="$PROJECT_DIR$/src/test.vue" />
+        <option value="$PROJECT_DIR$/src/components/layout/Taskbar.vue" />
       </list>
     </option>
   </component>
@@ -266,12 +265,12 @@
       <updated>1553586205581</updated>
       <workItem from="1553586213579" duration="226000" />
       <workItem from="1553933162264" duration="2910000" />
-      <workItem from="1554092905234" duration="11164000" />
+      <workItem from="1554092905234" duration="11512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14300000" />
+    <option name="totallyTimeSpent" value="14648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -311,7 +310,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -369,13 +368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NiceHandsomeButton.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/global.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -383,21 +375,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/Taskbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NiceHandsomeButton.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="14" selection-start-line="4" selection-start-column="12" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/Taskbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="822">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
