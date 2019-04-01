@@ -1,32 +1,34 @@
 <template>
-    <div id="task-bar"
-         :class="{
+    <div class="task-bar__container">
+        <div id="task-bar"
+             :class="{
               'task-bar--box-shadowed': enableBoxShadow,
               'task-bar--bordered': enableBorder,
               'task-bar--fixed-on-top': enableFixedOnTop,
          }"
-         :style="{color: color, backgroundColor: backgroundColor}">
+             :style="{color: color, backgroundColor: backgroundColor}">
 
-        <div>
-            <!--back button-->
-            <button class="btn--transparent"
-                    @click="backButtonPressed()"
-                    style="padding-left: 0; margin-right: 10px">
-                <i class="material-icons icon--in-text"
-                   style="font-size: var(--font_size_semi_large)"
-                >arrow_back</i>
-            </button>
+            <div>
+                <!--back button-->
+                <button class="btn--transparent"
+                        @click="handleBackButtonPress()"
+                        style="padding-left: 0; margin-right: 10px">
+                    <i class="material-icons icon--in-text"
+                       style="font-size: var(--font_size_semi_large)"
+                    >arrow_back</i>
+                </button>
 
-            <!--view name-->
-            <span style="text-transform: capitalize"
-            >{{viewName}}</span>
+                <!--view name-->
+                <span class="task-bar__view-name"
+                >{{viewName}}</span>
+            </div>
+
+            <!--action in right-->
+            <div style="display: flex" v-cloak>
+                <slot></slot>
+            </div>
+
         </div>
-
-        <!--action in right-->
-        <div v-cloak>
-            <slot></slot>
-        </div>
-
     </div>
 </template>
 
@@ -60,8 +62,8 @@
             },
         },
         methods: {
-            backButtonPressed() {
-                this.$emit('backButtonPressed')
+            handleBackButtonPress() {
+                this.$emit('backButtonPress')
             }
         }
     }
@@ -75,6 +77,10 @@
         padding: var(--padding_side);
         position: relative;
     }
+    .task-bar__container {
+        position: relative;
+        min-height: 56px;
+    }
     .task-bar--box-shadowed {
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
     }
@@ -86,5 +92,9 @@
         top: 0;
         left: 0;
         right: 0;
+    }
+    .task-bar__view-name {
+        text-transform: capitalize;
+        font-size: var(--font_size_semi_large);
     }
 </style>
