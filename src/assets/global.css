@@ -1,0 +1,56 @@
+/*------------------------------*/
+/* BUTTONS */
+/*------------------------------*/
+
+/*icons*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+
+/*------------------------------*/
+/* VARIABLE */
+/*------------------------------*/
+
+:root {
+    /*fonts*/
+    --font_roboto: 'Roboto', sans-serif;
+    --font_primary: var(--font_roboto);
+
+    --font_size_large: 24px;
+    --font_size_regular: 16px;
+    --font_size_medium: 14px;
+    --font_size_small: 12px;
+}
+
+
+/*------------------------------*/
+/* GENERAL */
+/*------------------------------*/
+
+body {
+    font-family: var(--font_primary);
+}
+
+/*------------------------------*/
+/* BUTTONS */
+/*------------------------------*/
+
+.btn--transparent {
+    background: none;
+    border: none;
+}
+.btn--transparent:active, .btn--transparent:focus {
+    outline: none;
+}
+
+
+/*------------------------------*/
+/* ICONS */
+/*------------------------------*/
+
+.icon--in-text {
+    position: relative;
+    top: 2px;
+}

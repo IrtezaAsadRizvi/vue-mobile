@@ -3,14 +3,14 @@
             @click="onClick"
             @dblclick="onDoubleClick"
             :class="[
-   'nice-handsome-button',
-   'nice-handsome-button--' + color,
-   'nice-handsome-button--' + size,
-   {
-    'nice-handsome-button--rounded': rounded
-   }
-  ]"
-    >
+                'nice-handsome-button',
+                'nice-handsome-button--' + color,
+                'nice-handsome-button--' + size,
+                {
+                    'nice-handsome-button--rounded': rounded
+                }
+            ]"
+        >
         <slot></slot>
     </button>
 </template>
