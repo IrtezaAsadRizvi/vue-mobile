@@ -1,6 +1,6 @@
 <template>
     <div id="test">
-        <task-bar viewName="Settings" @backButtonPressed="test()"/>
+        <task-bar viewName="Settings" @backButtonPressed="test()">yup</task-bar>
     </div>
 </template>
 
@@ -26,8 +26,9 @@
     }
 </script>
 
-<style scoped>
-
-    
-    
+<style>
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
 </style>

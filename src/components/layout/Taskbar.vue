@@ -1,12 +1,24 @@
 <template>
     <div id="task-bar" :style="{color: color, backgroundColor: backgroundColor}">
-        <button class="btn--transparent"
-                @click="backButtonPressed()">
-            <i class="material-icons icon--in-text"
-               style="font-size: var(--font_size_regular)"
-            >arrow_back</i>
-        </button>
-        <span>{{viewName}}</span>
+        <div>
+            <!--back button-->
+            <button class="btn--transparent"
+                    @click="backButtonPressed()"
+                    style="padding-left: 0">
+                <i class="material-icons icon--in-text"
+                   style="font-size: var(--font_size_regular)"
+                >arrow_back</i>
+            </button>
+            <!--view name-->
+            <span style="text-transform: capitalize"
+            >{{viewName}}</span>
+        </div>
+
+        <!--action in right-->
+        <div v-cloak>
+            <slot></slot>
+        </div>
+
     </div>
 </template>
 
@@ -20,7 +32,7 @@
             },
             backgroundColor: {
                 type: String,
-                default: "#FFFFFF",
+                default: "#FFF4F4",
             },
             viewName: {
                 type: String,
@@ -37,7 +49,9 @@
 
 <style lang="css" scoped>
     @import url('../../assets/global.css');
-    .task-bar {
+    #task-bar {
         display: flex;
+        justify-content: space-between;
+        padding: var(--padding_side);
     }
 </style>

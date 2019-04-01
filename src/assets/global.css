@@ -22,6 +22,9 @@
     --font_size_regular: 16px;
     --font_size_medium: 14px;
     --font_size_small: 12px;
+
+    /*spacing*/
+    --padding_side: 16px;
 }
 
 
