@@ -26,6 +26,11 @@
 
     /*spacing*/
     --padding_side: 16px;
+
+    /*colors*/
+    --color_white: #FFFFFF;
+    --color_black: #212121;
+    --color_pure_black: #000000;
 }
 
 
