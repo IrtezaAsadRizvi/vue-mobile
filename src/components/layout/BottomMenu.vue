@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="side-menu" :class="{'active': activeStatus}" @touchmove="preventScroll">
+        <div id="bottom-menu" :class="{'active': activeStatus}" @touchmove="preventScroll">
             <slot></slot>
         </div>
         <div class="overlay" v-if="activeStatus" @click="openMenu()" @touchmove="preventScroll"></div>
@@ -9,7 +9,7 @@
 
 <script>
     export default {
-        name: "SideMenu",
+        name: "BottomMenu",
         props: {
             activeStatus: {
                 type: Boolean,
@@ -28,20 +28,20 @@
 </script>
 
 <style lang="css" scoped>
-    #side-menu {
+    #bottom-menu {
         position: fixed;
         overflow-y: auto;
-        top: 0;
+        right: 0;
         bottom: 0;
         left: 0;
-        width: 75%;
+        height: auto;
         background: var(--color_white);
         z-index: 1000;
-        transform: translate(-100%);
+        transform: translateY(100%);
         transition: 0.3s;
     }
-    #side-menu.active {
-        transform: translate(0%);
+    #bottom-menu.active {
+        transform: translateY(0%);
     }
     .overlay {
         position: fixed;

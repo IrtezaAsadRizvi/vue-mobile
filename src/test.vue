@@ -5,7 +5,7 @@
                 <menu-item @click="sideMenu = !sideMenu" icon="menu"/>
             </template>
             <template v-slot:right_action>
-                <menu-item @click="test"/> <menu-item @click="sideMenu = !sideMenu" icon="add"/>
+                <menu-item @click="test"/> <menu-item @click="bottomMenu = !bottomMenu" icon="add"/>
             </template>
         </task-bar>
 
@@ -20,6 +20,11 @@
             <list-item>sed do</list-item>
         </side-menu>
 
+        <bottom-menu :activeStatus="bottomMenu" @close="bottomMenu = false">
+            <list-item>eiusmod tempor</list-item>
+            <list-item>sed do</list-item>
+        </bottom-menu>
+
     </div>
 </template>
 
@@ -29,6 +34,7 @@
         data() {
           return {
               sideMenu: false,
+              bottomMenu: false,
           }
         },
         components: {
@@ -36,6 +42,7 @@
             'list-item': () => import('./components/layout/ListItem'),
             'menu-item': () => import('./components/menu/MenuItem'),
             'side-menu': () => import('./components/layout/SideMenu'),
+            'bottom-menu': () => import('./components/layout/BottomMenu'),
         },
         mounted() {
             var viewPortTag=document.createElement('meta');
