@@ -5,6 +5,7 @@
               'task-bar--bordered': enableBorder,
          }"
          :style="{color: color, backgroundColor: backgroundColor}">
+
         <div>
             <!--back button-->
             <button class="btn--transparent"
@@ -14,6 +15,7 @@
                    style="font-size: var(--font_size_regular)"
                 >arrow_back</i>
             </button>
+
             <!--view name-->
             <span style="text-transform: capitalize"
             >{{viewName}}</span>
