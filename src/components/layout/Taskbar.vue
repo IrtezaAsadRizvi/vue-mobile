@@ -9,14 +9,8 @@
              :style="{color: color, backgroundColor: backgroundColor}">
 
             <div>
-                <!--back button-->
-                <button class="btn--transparent"
-                        @click="handleBackButtonPress()"
-                        style="padding-left: 0; margin-right: 10px">
-                    <i class="material-icons icon--in-text"
-                       style="font-size: var(--font_size_semi_large)"
-                    >arrow_back</i>
-                </button>
+                <!--action in left-->
+                <slot name="left_action"></slot>
 
                 <!--view name-->
                 <span class="task-bar__view-name"
@@ -25,7 +19,7 @@
 
             <!--action in right-->
             <div style="display: flex" v-cloak>
-                <slot></slot>
+                <slot name="right_action"></slot>
             </div>
 
         </div>
@@ -96,5 +90,6 @@
     .task-bar__view-name {
         text-transform: capitalize;
         font-size: var(--font_size_semi_large);
+        margin-left: 10px;
     }
 </style>
