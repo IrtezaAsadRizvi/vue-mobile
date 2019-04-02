@@ -1,19 +1,28 @@
 <template>
     <div class="list-item"
-         :style="{color: color}"
+         ref="component"
          @click="handleClick()">
         <slot></slot>
     </div>
 </template>
 
 <script>
+    import Styleable from '../base/Styleable';
+
     export default {
         name: "ListItem",
+        extends: Styleable,
         props: {
-            color: {
-                type: String,
-                default: "#212121",
-            }
+            styles: {
+                type: Object,
+                default: () => {
+                    return {
+                        color: '#212121',
+                        backgroundColor: 'transparent',
+                        fontSize: '16px'
+                    }
+                },
+            },
         },
         methods: {
             handleClick() {

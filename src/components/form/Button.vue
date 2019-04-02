@@ -1,14 +1,17 @@
 <template>
     <button class="button"
-            ref="button"
+            ref="component"
             @click="handleClick($event)">
         <slot></slot>
     </button>
 </template>
 
 <script>
+    import Styleable from '../base/Styleable';
+
     export default {
         name: "Button",
+        extends: Styleable,
         props: {
             styles: {
                 type: Object,
@@ -21,17 +24,7 @@
                 },
             },
         },
-        mounted() {
-            this.applyStyle(this.$refs.button, this.styles);
-        },
         methods: {
-            applyStyle(elem, styles) {
-                for (var style in styles) {
-                    if (styles.hasOwnProperty(style)) {
-                        elem.style[style] = styles[style]
-                    }
-                }
-            },
             handleClick(e) {
                 this.$emit('click');
                 this.createRipple(e)
@@ -67,8 +60,7 @@
     @import url('../../assets/global.css');
 
     .button {
-        padding: 1em 2em;
-        margin: 3px;
+        padding: var(--padding_side);
         border: 0;
         outline: 0;
         color: white;

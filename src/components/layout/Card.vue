@@ -1,23 +1,28 @@
 <template>
     <div class="card"
-         :style="{color: color, backgroundColor: backgroundColor}"
-         @click="handleClick()">
+         @click="handleClick()"
+         ref="component">
         <slot></slot>
     </div>
 </template>
 
 <script>
+    import Styleable from '../base/Styleable';
+
     export default {
         name: "Card",
+        extends: Styleable,
         props: {
-            color: {
-                type: String,
-                default: "#212121",
+            styles: {
+                type: Object,
+                default: () => {
+                    return {
+                        color: '#212121',
+                        backgroundColor: 'transparent',
+                        fontSize: '16px'
+                    }
+                },
             },
-            backgroundColor: {
-                type: String,
-                default: "transparent",
-            }
         },
         methods: {
             handleClick() {

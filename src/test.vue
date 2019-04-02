@@ -1,6 +1,6 @@
 <template>
     <div id="test">
-        <task-bar viewName="Settings" @backButtonPress="test()" :enableFixedOnTop="true">
+        <task-bar viewName="Settings" @backButtonPress="test()" :enableFixedOnTop="true" :styles="{color: 'red'}">
             <template v-slot:left_action>
                 <menu-item @click="sideMenu = !sideMenu" icon="menu"/>
             </template>
@@ -15,7 +15,9 @@
         <h4>List Item</h4>
 
         <list-item>sed do eiusmod tempor incididunt ut</list-item>
-        <list-item>sed do eiusmod tempor incididunt ut</list-item>
+        <list-item :styles="{
+            color: 'blue'
+        }">sed do eiusmod tempor incididunt ut</list-item>
         <list-item>sed do eiusmod tempor incididunt ut</list-item>
 
         <h4>Card</h4>
@@ -32,7 +34,8 @@
             <list-item>sed do</list-item>
         </side-menu>
 
-        <bottom-menu :activeStatus="bottomMenu" @close="bottomMenu = false">
+        <bottom-menu :styles="{color: 'blue'}" :activeStatus="bottomMenu" @close="bottomMenu = false">
+            sdsd
             <list-item>eiusmod tempor</list-item>
             <list-item>sed do</list-item>
         </bottom-menu>

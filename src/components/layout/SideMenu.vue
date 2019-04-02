@@ -1,6 +1,9 @@
 <template>
     <div>
-        <div id="side-menu" :class="{'active': activeStatus}" @touchmove="preventScroll">
+        <div id="side-menu"
+             :class="{'active': activeStatus}"
+             @touchmove="preventScroll"
+             ref="component">
             <slot></slot>
         </div>
         <div class="overlay" v-if="activeStatus" @click="openMenu()" @touchmove="preventScroll"></div>
@@ -8,9 +11,22 @@
 </template>
 
 <script>
+    import Styleable from '../base/Styleable';
+
     export default {
         name: "SideMenu",
+        extends: Styleable,
         props: {
+            styles: {
+                type: Object,
+                default: () => {
+                    return {
+                        color: '#212121',
+                        backgroundColor: '#FFFFFF',
+                        fontSize: '16px'
+                    }
+                },
+            },
             activeStatus: {
                 type: Boolean,
                 default: false,

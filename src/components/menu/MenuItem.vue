@@ -1,5 +1,8 @@
 <template>
-    <button id="menu-item" class="btn--transparent" @click="handleClick()">
+    <button id="menu-item"
+            class="btn--transparent"
+            ref="component"
+            @click="handleClick()">
         <i class="material-icons icon--in-text"
            style="font-size: var(--font_size_semi_large)"
         >{{icon}}</i>
@@ -7,12 +10,21 @@
 </template>
 
 <script>
+    import Styleable from '../base/Styleable';
+
     export default {
         name: "MenuItem",
+        extends: Styleable,
         props: {
-            color: {
-                type: String,
-                default: "#212121",
+            styles: {
+                type: Object,
+                default: () => {
+                    return {
+                        color: '#212121',
+                        backgroundColor: 'transparent',
+                        fontSize: '16px'
+                    }
+                },
             },
             icon: {
                 type: String,

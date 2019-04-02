@@ -5,8 +5,8 @@
               'task-bar--box-shadowed': enableBoxShadow,
               'task-bar--bordered': enableBorder,
               'task-bar--fixed-on-top': enableFixedOnTop,
-         }"
-             :style="{color: color, backgroundColor: backgroundColor}">
+             }"
+             ref="component">
 
             <div>
                 <!--action in left-->
@@ -27,16 +27,21 @@
 </template>
 
 <script>
+    import Styleable from '../base/Styleable';
+
     export default {
         name: 'Taskbar',
+        extends: Styleable,
         props: {
-            color: {
-                type: String,
-                default: "#212121",
-            },
-            backgroundColor: {
-                type: String,
-                default: "#FFFFFF",
+            styles: {
+                type: Object,
+                default: () => {
+                    return {
+                        color: '#212121',
+                        backgroundColor: 'transparent',
+                        fontSize: '16px'
+                    }
+                },
             },
             enableBoxShadow: {
                 type: Boolean,
