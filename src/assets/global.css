@@ -24,8 +24,9 @@
     --font_size_medium: 14px;
     --font_size_small: 12px;
 
-    /*spacing*/
+    /*shape & spacing*/
     --padding_side: 16px;
+    --border_radius_standard: 4px;
 
     /*colors*/
     --color_white: #FFFFFF;
