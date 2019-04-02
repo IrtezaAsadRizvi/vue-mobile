@@ -23,6 +23,9 @@
         <card>Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua. </card>
         <card>Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua. </card>
 
+        <h4>Buttons</h4>
+        <Button>Action</Button>
+
 
         <side-menu :activeStatus="sideMenu" @close="sideMenu = false">
             <list-item>eiusmod tempor</list-item>
@@ -53,6 +56,7 @@
             'side-menu': () => import('./components/layout/SideMenu'),
             'bottom-menu': () => import('./components/layout/BottomMenu'),
             'card': () => import('./components/layout/Card'),
+            'Button': () => import('./components/form/Button'),
         },
         mounted() {
             var viewPortTag=document.createElement('meta');

@@ -1,5 +1,5 @@
 <template>
-    <button id="menu-item" class="btn--transparent" @click="menuItemClick()">
+    <button id="menu-item" class="btn--transparent" @click="handleClick()">
         <i class="material-icons icon--in-text"
            style="font-size: var(--font_size_semi_large)"
         >{{icon}}</i>
@@ -20,7 +20,7 @@
             }
         },
         methods: {
-            menuItemClick() {
+            handleClick() {
                 this.$emit('click');
             }
         }
