@@ -1,10 +1,9 @@
 <template>
-    <button id="menu-item"
-            class="btn--transparent"
+    <button class="menu-item btn--transparent"
             ref="component"
             @click="handleClick()">
         <i class="material-icons icon--in-text"
-           style="font-size: var(--font_size_semi_large)"
+           style=""
         >{{icon}}</i>
     </button>
 </template>
@@ -16,16 +15,6 @@
         name: "MenuItem",
         mixins: [Styleable],
         props: {
-            styles: {
-                type: Object,
-                default: () => {
-                    return {
-                        color: '#212121',
-                        backgroundColor: 'transparent',
-                        fontSize: '16px'
-                    }
-                },
-            },
             icon: {
                 type: String,
                 default: "crop_square",
@@ -41,4 +30,12 @@
 
 <style lang="css" scoped>
     @import url('../../assets/global.css');
+
+    .menu-item {
+        color: var(--color_black);
+        background-color: var(--color_white);
+    }
+    .menu-item i{
+        font-size: var(--font_size_semi_large);
+    }
 </style>

@@ -12,18 +12,6 @@
     export default {
         name: "ListItem",
         mixins: [Styleable],
-        props: {
-            styles: {
-                type: Object,
-                default: () => {
-                    return {
-                        color: '#212121',
-                        backgroundColor: 'transparent',
-                        fontSize: '16px'
-                    }
-                },
-            },
-        },
         methods: {
             handleClick() {
                 this.$emit('click');
@@ -35,6 +23,9 @@
 <style lang="css" scoped>
     .list-item {
         padding: var(--padding_side);
+        color: var(--color_black);
+        background-color: var(--color_white);
+        font-size: var(--font_size_regular);
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
     .list-item:first-child {

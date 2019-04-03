@@ -33,16 +33,6 @@
         name: 'Taskbar',
         mixins: [Styleable],
         props: {
-            styles: {
-                type: Object,
-                default: () => {
-                    return {
-                        color: '#212121',
-                        backgroundColor: 'transparent',
-                        fontSize: '16px'
-                    }
-                },
-            },
             enableBoxShadow: {
                 type: Boolean,
                 default: false,
@@ -75,7 +65,9 @@
         justify-content: space-between;
         padding: var(--padding_side);
         position: relative;
+        color: var(--color_black);
         background-color: var(--color_white);
+        font-size: var(--font_size_regular);
     }
     .task-bar__container {
         position: relative;

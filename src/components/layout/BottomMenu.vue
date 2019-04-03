@@ -17,16 +17,6 @@
         name: "BottomMenu",
         mixins: [Styleable],
         props: {
-            styles: {
-                type: Object,
-                default: () => {
-                    return {
-                        color: '#212121',
-                        backgroundColor: '#FFFFFF',
-                        fontSize: '16px'
-                    }
-                },
-            },
             activeStatus: {
                 type: Boolean,
                 default: false,
@@ -51,7 +41,9 @@
         bottom: 0;
         left: 0;
         height: auto;
-        background: var(--color_white);
+        color: var(--color_black);
+        background-color: var(--color_white);
+        font-size: var(--font_size_regular);
         z-index: 1000;
         transform: translateY(100%);
         transition: 0.3s;

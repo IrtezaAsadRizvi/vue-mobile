@@ -5,7 +5,7 @@
                 <menu-item @click="sideMenu = !sideMenu" icon="menu"/>
             </template>
             <template v-slot:right_action>
-                <menu-item @click="test"/> <menu-item @click="bottomMenu = !bottomMenu" icon="add"/>
+                <menu-item @click="test" :styles="{color: 'red'}"/> <menu-item @click="bottomMenu = !bottomMenu" icon="add"/>
             </template>
         </task-bar>
 
