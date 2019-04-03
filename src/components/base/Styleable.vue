@@ -1,7 +1,3 @@
-<template>
-    
-</template>
-
 <script>
     export default {
         name: "Styleable",
@@ -31,7 +27,3 @@
         }
     }
 </script>
-
-<style scoped>
-
-</style>

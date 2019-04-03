@@ -1,6 +1,3 @@
-<template>
-</template>
-
 <script>
     export default {
         name: "Tappable",
@@ -35,7 +32,3 @@
         }
     }
 </script>
-
-<style scoped>
-
-</style>

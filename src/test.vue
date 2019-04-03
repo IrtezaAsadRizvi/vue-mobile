@@ -22,7 +22,7 @@
 
         <h4>Card</h4>
 
-        <card>Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua. </card>
+        <card :styles="{color: 'red'}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua. </card>
         <card>Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua. </card>
 
         <h4>Buttons</h4>
