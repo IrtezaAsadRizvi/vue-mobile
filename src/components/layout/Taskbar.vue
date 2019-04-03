@@ -75,6 +75,7 @@
         justify-content: space-between;
         padding: var(--padding_side);
         position: relative;
+        background-color: var(--color_white);
     }
     .task-bar__container {
         position: relative;
