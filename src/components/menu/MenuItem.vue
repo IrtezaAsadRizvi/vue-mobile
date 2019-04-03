@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    import Styleable from '../base/Styleable';
+    import Styleable from '../mixins/Styleable';
 
     export default {
         name: "MenuItem",

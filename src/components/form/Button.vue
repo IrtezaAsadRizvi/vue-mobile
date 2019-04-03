@@ -7,8 +7,8 @@
 </template>
 
 <script>
-    import Styleable from '../base/Styleable';
-    import Tappable from '../base/Tappable';
+    import Styleable from '../mixins/Styleable';
+    import Tappable from '../mixins/Tappable';
 
     export default {
         name: "Button",
