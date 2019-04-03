@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f3877d-9115-4a11-acc2-aee0db120dbf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/Button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/Button.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/ListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/ListItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/SideMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SideMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/MenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/MenuItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mixins/Styleable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mixins/Styleable.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +17,7 @@
     <session id="1072020625">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.52" value="1" />
@@ -38,7 +32,7 @@
           <entry key="gitignore" value="1" />
           <entry key="js" value="6" />
           <entry key="json" value="1" />
-          <entry key="vue" value="19" />
+          <entry key="vue" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -47,7 +41,7 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Vue.js" value="19" />
+          <entry key="Vue.js" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -73,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="-144">
               <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
             </state>
           </provider>
@@ -91,20 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/form/Button.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="44" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="27" selection-end-column="44" />
-              <folding>
-                <element signature="e#170#212#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/mixins/Tappable.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -128,10 +110,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/mixins/Styleable.vue">
+        <entry file="file://$PROJECT_DIR$/src/components/layout/Taskbar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="612">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,17 +124,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/layout/BottomMenu.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="106">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/layout/SideMenu.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-108">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/SideMenu.vue">
+        <entry file="file://$PROJECT_DIR$/src/components/mixins/Styleable.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="126">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -204,8 +198,6 @@
         <option value="$PROJECT_DIR$/src/components/layout/Section.vue" />
         <option value="$PROJECT_DIR$/src/components/layout/BorderedSection.vue" />
         <option value="$PROJECT_DIR$/src/assets/global.css" />
-        <option value="$PROJECT_DIR$/src/components/layout/BottomMenu.vue" />
-        <option value="$PROJECT_DIR$/src/components/layout/Taskbar.vue" />
         <option value="$PROJECT_DIR$/src/components/base/Styleable.vue" />
         <option value="$PROJECT_DIR$/src/components/base/Tappable.vue" />
         <option value="$PROJECT_DIR$/src/components/form/Button.vue" />
@@ -214,6 +206,9 @@
         <option value="$PROJECT_DIR$/src/components/menu/MenuItem.vue" />
         <option value="$PROJECT_DIR$/src/components/layout/ListItem.vue" />
         <option value="$PROJECT_DIR$/src/components/layout/SideMenu.vue" />
+        <option value="$PROJECT_DIR$/src/components/layout/Taskbar.vue" />
+        <option value="$PROJECT_DIR$/src/components/layout/BottomMenu.vue" />
+        <option value="$PROJECT_DIR$/src/components/mixins/Styleable.vue" />
       </list>
     </option>
   </component>
@@ -267,6 +262,13 @@
               <item name="vue-mobile" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-mobile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-mobile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue-mobile" type="b2602c69:ProjectViewProjectNode" />
@@ -328,7 +330,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41396000" />
+    <option name="totallyTimeSpent" value="42598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -431,35 +433,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/BottomMenu.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/Taskbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/base/Styleable.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/base/Tappable.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mixins/Styleable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/mixins/Tappable.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -475,27 +453,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/menu/MenuItem.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/form/Button.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="44" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="27" selection-end-column="44" />
-          <folding>
-            <element signature="e#170#212#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,10 +474,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/BottomMenu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/form/Button.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/Taskbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout/SideMenu.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="-108">
           <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/mixins/Styleable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>

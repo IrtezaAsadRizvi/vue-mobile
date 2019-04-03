@@ -6,9 +6,6 @@
                 type: Object,
                 default: () => {
                     return {
-                        color: '#212121',
-                        backgroundColor: 'transparent',
-                        fontSize: '16px'
                     }
                 },
             },
