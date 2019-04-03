@@ -15,7 +15,7 @@
 
     export default {
         name: "BottomMenu",
-        extends: Styleable,
+        mixins: [Styleable],
         props: {
             styles: {
                 type: Object,

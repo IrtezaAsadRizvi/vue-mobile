@@ -11,7 +11,7 @@
 
     export default {
         name: "Card",
-        extends: Styleable,
+        mixins: [Styleable],
         props: {
             styles: {
                 type: Object,

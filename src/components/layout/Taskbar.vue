@@ -31,7 +31,7 @@
 
     export default {
         name: 'Taskbar',
-        extends: Styleable,
+        mixins: [Styleable],
         props: {
             styles: {
                 type: Object,

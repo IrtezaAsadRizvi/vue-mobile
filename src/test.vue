@@ -26,7 +26,7 @@
         <card>Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua. </card>
 
         <h4>Buttons</h4>
-        <Button>Action</Button>
+        <Button :styles="{color: 'red'}">Action</Button>
 
 
         <side-menu :activeStatus="sideMenu" @close="sideMenu = false">

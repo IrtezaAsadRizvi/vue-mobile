@@ -15,7 +15,7 @@
 
     export default {
         name: "SideMenu",
-        extends: Styleable,
+        mixins: [Styleable],
         props: {
             styles: {
                 type: Object,

@@ -14,7 +14,7 @@
 
     export default {
         name: "MenuItem",
-        extends: Styleable,
+        mixins: [Styleable],
         props: {
             styles: {
                 type: Object,
