@@ -62,7 +62,7 @@
             'bottom-menu': () => import('./components/layout/BottomMenu'),
             'card': () => import('./components/layout/Card'),
             'Button': () => import('./components/form/Button'),
-            'ProgressBar': () => import('./components/Utils/ProgressBar'),
+            'ProgressBar': () => import('./components/utils/ProgressBar'),
         },
         mounted() {
             var viewPortTag=document.createElement('meta');
