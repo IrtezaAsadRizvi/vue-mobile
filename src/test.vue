@@ -25,6 +25,8 @@
         <card :styles="{color: 'red'}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua. </card>
         <card>Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua. </card>
 
+        <ProgressBar/>
+
         <h4>Buttons</h4>
         <Button :styles="{color: 'red'}">Action</Button>
 
@@ -60,6 +62,7 @@
             'bottom-menu': () => import('./components/layout/BottomMenu'),
             'card': () => import('./components/layout/Card'),
             'Button': () => import('./components/form/Button'),
+            'ProgressBar': () => import('./components/Utils/ProgressBar'),
         },
         mounted() {
             var viewPortTag=document.createElement('meta');
