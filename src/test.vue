@@ -3,12 +3,21 @@
         <!--taskbar-->
         <vm-task-bar viewName="Settings" @backButtonPress="test()" :enableFixedOnTop="true" :styles="{color: 'red'}">
             <template v-slot:left_action>
-                <menu-item @click="sideMenu = !sideMenu" icon="menu"/>
+                <vm-menu-item @click="sideMenu = !sideMenu" icon="menu"/>
             </template>
             <template v-slot:right_action>
-                <menu-item @click="test" :styles="{color: 'red'}"/> <menu-item @click="bottomMenu = !bottomMenu" icon="add"/>
+                <vm-menu-item @click="test" :styles="{color: 'red'}"/> <vm-menu-item @click="bottomMenu = !bottomMenu" icon="add"/>
             </template>
         </vm-task-bar>
+
+        <!--side menu-->
+        <vm-side-menu :activeStatus="sideMenu" @close="sideMenu = false">
+
+        </vm-side-menu>
+
+        <vm-bottom-menu :activeStatus="bottomMenu" @close="bottomMenu = false">
+            <p>botttom menu content</p>
+        </vm-bottom-menu>
 
     </div>
 </template>

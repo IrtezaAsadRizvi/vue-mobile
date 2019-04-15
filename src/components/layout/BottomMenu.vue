@@ -6,7 +6,7 @@
              @touchmove="preventScroll">
             <slot></slot>
         </div>
-        <div class="overlay" v-if="activeStatus" @click="openMenu()" @touchmove="preventScroll"></div>
+        <div class="overlay" v-if="activeStatus" @click="closeMenu()" @touchmove="preventScroll"></div>
     </div>
 </template>
 
@@ -23,7 +23,7 @@
             }
         },
         methods: {
-            openMenu() {
+            closeMenu() {
                 this.$emit('close')
             },
             preventScroll(e){
