@@ -11,7 +11,12 @@
             },
         },
         mounted() {
-            this.applyStyle(this.$refs.component, this.styles);
+            try {
+                this.applyStyle(this.$refs.component, this.styles)
+            }
+            catch (error) {
+                console.trace(error);
+            }
         },
         methods: {
             applyStyle(elem, styles) {
