@@ -19,6 +19,9 @@
             <p>botttom menu content</p>
         </vm-bottom-menu>
 
+
+        <vm-radio>Demo Radio</vm-radio>
+
     </div>
 </template>
 
