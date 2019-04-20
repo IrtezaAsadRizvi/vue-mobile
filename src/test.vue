@@ -20,7 +20,12 @@
         </vm-bottom-menu>
 
 
-        <vm-radio>Demo Radio</vm-radio>
+        <div style="padding: 16px">
+            <h5>Radio</h5>
+            <vm-radio>Demo Radio</vm-radio>
+            <h5>Button</h5>
+            <vm-button :styles="{color: 'red'}" :activeStyles="{backgroundColor: 'blue'}">Button</vm-button>
+        </div>
 
     </div>
 </template>
@@ -58,7 +63,8 @@
         },
         methods: {
             test() {
-                console.log('test: working!')
+                // eslint-disable-next-line
+                console.log('test');
             }
         }
     }

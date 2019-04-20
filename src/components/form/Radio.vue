@@ -1,5 +1,5 @@
 <template>
-    <label class="pure-material-radio">
+    <label class="pure-material-radio" ref="component">
         <input type="radio" name="group">
         <span><slot></slot></span>
     </label>
